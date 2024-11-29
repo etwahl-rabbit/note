@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Etwahl Note"
-  text: "Etwahl的生存笔记"
+  text: "瑷华的生存笔记"
   tagline: My great project tagline
   image:
     src: /logo.png
