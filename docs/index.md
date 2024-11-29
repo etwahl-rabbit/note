@@ -3,9 +3,12 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
+  name: "Etwahl Note"
+  text: "Etwahl的生存笔记"
   tagline: My great project tagline
+  image:
+    src: /logo.png
+    alt: Etwahl Note
   actions:
     - theme: brand
       text: Markdown Examples

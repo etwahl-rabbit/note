@@ -1,29 +1,44 @@
-import { defineConfig } from 'vitepress'
+import {defineConfig} from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/note/',
-  title: "My Awesome Project",
-  description: "A VitePress Site",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+    base: '/note/',
+    title: "Etwahl Note",
+    description: "Etwahl的生存笔记",
+    themeConfig: {
+        nav: [
+            {text: 'Java', link: '/java/'},
+            {text: '前端', link: '/front/'},
+            {text: '测试', link: '/test/'},
+            {text: '运维', link: '/ops/'}
+        ],
+        sidebar: {
+            '/java/': [
+                {
+                    text: 'Java',
+                    items: []
+                }
+            ],
+            '/front/': [
+                {
+                    text: '前端',
+                    items: []
+                }
+            ],
+            '/test/': [
+                {
+                    text: '测试',
+                    items: []
+                }
+            ],
+            '/ops/': [
+                {
+                    text: '运维',
+                    items: []
+                }
+            ]
+        },
+        socialLinks: [
+            {icon: 'github', link: 'https://github.com/etwahl-rabbit/note'}
         ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/etwahl-rabbit/note' }
-    ]
-  }
+    }
 })
